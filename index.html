@@ -1,54 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Currículum Vitae - Nombre Apellido</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Para que la tabla no tenga bordes visibles */
+      table {
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 8px 12px;
+        text-align: left;
+      }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Jairo Rodriguez Ortiz</h1>
+        <p>Desarrollador Web | jairo.ortiz@email.com | +57 300 1234567</p>
+    </header>
 
-  <!-- Navegación principal -->
-  <header>
     <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#educacion">Educación</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#testimonios">Testimonios</a></li> <!-- Enlace agregado -->
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+        <ul>
+            <li><a href="#resumen">Resumen</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#testimonios">Testimonios</a></li> <!-- enlace añadido -->
+        </ul>
     </nav>
-  </header>
 
-  <!-- Sección de testimonios -->
-  <section id="testimonios">
-    <h2>Testimonios</h2>
+    <main>
+        <section id="resumen">
+            <h2>Resumen</h2>
+            <p>Breve descripción de tus habilidades y experiencia.</p>
+            <p>Visita mi perfil de GitHub para ver más proyectos: 
+              <a href="https://github.com/tunombre" target="_blank" rel="noopener">https://github.com/tunombre</a>
+            </p>
+        </section>
 
-    <article>
-      <blockquote>
-        "Trabajar con [Tu Nombre] fue una experiencia sumamente enriquecedora. Siempre demostró compromiso, iniciativa y una gran capacidad de adaptación a los cambios del proyecto."
-      </blockquote>
-      <p><strong>María López</strong>, Gerente de Proyectos en Innovatech Solutions.<br>
-      Colaboramos durante más de un año en el desarrollo de una plataforma web para gestión educativa.</p>
-    </article>
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <!-- Puedes añadir detalles aquí -->
+        </section>
 
-    <article>
-      <blockquote>
-        "[Tu Nombre] aportó una visión estratégica al equipo de desarrollo, y su habilidad para resolver problemas complejos fue clave en el éxito del producto final."
-      </blockquote>
-      <p><strong>Javier Torres</strong>, CTO en DevCore Labs.<br>
-      Lideró el área de frontend mientras trabajábamos en una app financiera para pymes.</p>
-    </article>
+        <section id="educacion">
+            <h2>Educación</h2>
+            <!-- Puedes añadir detalles aquí -->
+        </section>
 
-    <article>
-      <blockquote>
-        "Destaco la excelente comunicación y profesionalismo de [Tu Nombre], siempre dispuesto a escuchar, proponer y mejorar cada detalle del proyecto."
-      </blockquote>
-      <p><strong>Lucía Fernández</strong>, Diseñadora UX/UI freelance.<br>
-      Colaboramos en varios proyectos de diseño y desarrollo web para clientes internacionales.</p>
-    </article>
-  </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ol>
+                <li>Aprender nuevos lenguajes y frameworks</li>
+                <li>Mejorar habilidades en trabajo en equipo</li>
+                <li>Practicar resolución de problemas complejos</li>
+                <li>Mantenerse actualizado con las tendencias tecnológicas</li>
+            </ol>
+            <ul>
+                <li><strong>Dirección:</strong> Calle 123, Bogotá, Colombia</li>
+                <li><strong>Teléfono:</strong> +57 300 1234567</li>
+                <li><strong>Email:</strong> jairo.ortiz@email.com</li>
+                <li><strong>LinkedIn:</strong> linkedin.com/in/jairo-ortiz</li>
+            </ul>
+        </section>
 
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Tecnologías Usadas</th>
+                        <th>Objetivo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Sistema de Gestión Educativa</th>
+                        <td>React, Node.js, MongoDB</td>
+                        <td>Facilitar la administración de cursos y estudiantes en instituciones educativas</td>
+                    </tr>
+                    <tr>
+                        <th>App Financiera para PYMES</th>
+                        <td>Angular, Firebase, Express</td>
+                        <td>Ayudar a pequeñas empresas a gestionar sus finanzas de forma sencilla y segura</td>
+                    </tr>
+                    <tr>
+                        <th>Portal Web para Freelancers</th>
+                        <td>Vue.js, Laravel, MySQL</td>
+                        <td>Conectar freelancers con clientes ofreciendo un sistema seguro de contratación</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+
+            <article>
+                <blockquote>
+                    "Trabajar con Jairo fue una experiencia sumamente enriquecedora. Siempre demostró compromiso, iniciativa y una gran capacidad de adaptación a los cambios del proyecto."
+                </blockquote>
+                <p><strong>María López</strong>, Gerente de Proyectos en Innovatech Solutions.<br>
+                Colaboramos durante más de un año en el desarrollo de una plataforma web para gestión educativa.</p>
+            </article>
+
+            <article>
+                <blockquote>
+                    "Jairo aportó una visión estratégica al equipo de desarrollo, y su habilidad para resolver problemas complejos fue clave en el éxito del producto final."
+                </blockquote>
+                <p><strong>Javier Torres</strong>, CTO en DevCore Labs.<br>
+                Lideró el área de frontend mientras trabajábamos en una app financiera para pymes.</p>
+            </article>
+
+            <article>
+                <blockquote>
+                    "Destaco la excelente comunicación y profesionalismo de Jairo, siempre dispuesto a escuchar, proponer y mejorar cada detalle del proyecto."
+                </blockquote>
+                <p><strong>Lucía Fernández</strong>, Diseñadora UX/UI freelance.<br>
+                Colaboramos en varios proyectos de diseño y desarrollo web para clientes internacionales.</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© Jairo Rodriguez Ortiz - 2023</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jairo-ortiz" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/tunombre" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
