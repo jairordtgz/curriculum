@@ -1,59 +1,284 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1.0">
-    <title>Mi Currículum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Currículum Vitae</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Estilos básicos para la tabla sin bordes */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 2em;
+    }
+    th, td {
+      padding: 8px 12px;
+      text-align: left;
+    }
+    /* Contenedor multimedia */
+    #map {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 1em;
+      border: none;
+    }
+    .multimedia-item {
+      margin-bottom: 2em;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    iframe {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border: none;
+    }
+    form > div, fieldset > div {
+      margin-bottom: 1em;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+    fieldset legend {
+      font-weight: bold;
+      padding: 0 0.5em;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Jairo Rodriguez Ortiz</h1>
-        <p>Tu Cargo | Tu Email | Tu Teléfono</p>
-    </header>
+  <header>
+    <h1>Jairo Rodriguez Ortiz</h1>
+    <p>Desarrollador Web | jairo.ortiz@email.com | +57 300 1234567</p>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="#resumen">Resumen</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#multimedia">Multimedia</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="#sugerencias">Sugerencias</a></li>
+    </ul>
+  </nav>
 
-<main>
+  <main>
     <section id="resumen">
-        <h2>Resumen</h2>
-        <p>Breve descripción de tus habilidades y experiencia.</p>
+      <h2>Resumen de experiencia/h2>
+      <p>Breve descripción de tus habilidades y experiencia.</p>
+      <p>
+        Visita mi perfil de GitHub para ver más proyectos: 
+        <a href="https://github.com/tunombre" target="_blank" rel="noopener">
+          https://github.com/tunombre
+        </a>
+      </p>
     </section>
 
     <section id="experiencia">
-        <h2>Experiencia</h2>
+      <h2>Experiencia</h2>
+      <!-- Aquí puedes añadir detalles de experiencia -->
     </section>
 
     <section id="educacion">
-        <h2>Educación</h2>
+      <h2>Educación</h2>
+      <!-- Aquí puedes añadir detalles de educación -->
     </section>
 
     <section id="habilidades">
-        <h2>Habilidades</h2>
+      <h2>Habilidades</h2>
+      <ol>
+        <li>Aprender nuevos lenguajes y frameworks</li>
+        <li>Mejorar habilidades en trabajo en equipo</li>
+        <li>Practicar resolución de problemas complejos</li>
+        <li>Mantenerse actualizado con las tendencias tecnológicas</li>
+      </ol>
+      <ul>
+        <li><strong>Dirección:</strong> Calle 123, Bogotá, Colombia</li>
+        <li><strong>Teléfono:</strong> +57 300 1234567</li>
+        <li><strong>Email:</strong> jairo.ortiz@email.com</li>
+        <li><strong>LinkedIn:</strong> linkedin.com/in/jairo-ortiz</li>
+      </ul>
     </section>
 
     <section id="proyectos">
-        <h2>Proyectos</h2>
+      <h2>Proyectos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Proyecto</th>
+            <th>Tecnologías Usadas</th>
+            <th>Objetivo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Sistema de Gestión Educativa</th>
+            <td>React, Node.js, MongoDB</td>
+            <td>Facilitar la administración de cursos y estudiantes en instituciones educativas</td>
+          </tr>
+          <tr>
+            <th>App Financiera para PYMES</th>
+            <td>Angular, Firebase, Express</td>
+            <td>Ayudar a pequeñas empresas a gestionar sus finanzas de forma sencilla y segura</td>
+          </tr>
+          <tr>
+            <th>Portal Web para Freelancers</th>
+            <td>Vue.js, Laravel, MySQL</td>
+            <td>Conectar freelancers con clientes ofreciendo un sistema seguro de contratación</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
-</main>
 
-<footer>
-    <p>© Tu Nombre - 2023</p>
+    <section id="multimedia">
+      <h2>Multimedia</h2>
+
+      <article class="multimedia-item">
+        <h3>Mapa de Bogotá (Google Maps)</h3>
+        <iframe
+          id="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.826416665693!2d-74.08174958519729!3d4.609710343964717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99d9f5c8d1af%3A0x5e7e4e5b45f55a!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2ses!4v1696588800000!5m2!1ses!2ses"
+          width="600"
+          height="300"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de Bogotá, Colombia"
+        ></iframe>
+      </article>
+
+      <article class="multimedia-item">
+        <h3>Imagen de Programador</h3>
+        <img
+          src="https://picsum.photos/600/400?random=101&grayscale"
+          alt="Imagen de un programador"
+          width="600"
+          height="400"
+        />
+      </article>
+
+      <article class="multimedia-item">
+        <h3>Video de YouTube</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kTHNpusq654?si=uF2tf3g--Tg2M5V2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </article>
+    </section>
+
+    <section id="testimonios">
+      <h2>Testimonios</h2>
+
+      <article>
+        <blockquote>
+          "Trabajar con Jairo fue una experiencia sumamente enriquecedora. Siempre demostró compromiso, iniciativa y una gran capacidad de adaptación a los cambios del proyecto."
+        </blockquote>
+        <p>
+          <strong>María López</strong>, Gerente de Proyectos en Innovatech Solutions.
+          <br />
+          Colaboramos durante más de un año en el desarrollo de una plataforma web para gestión educativa.
+        </p>
+      </article>
+
+      <article>
+        <blockquote>
+          "Jairo aportó una visión estratégica al equipo de desarrollo, y su habilidad para resolver problemas complejos fue clave en el éxito del producto final."
+        </blockquote>
+        <p>
+          <strong>Javier Torres</strong>, CTO en DevCore Labs.
+          <br />
+          Lideró el área de frontend mientras trabajábamos en una app financiera para pymes.
+        </p>
+      </article>
+
+      <article>
+        <blockquote>
+          "Destaco la excelente comunicación y profesionalismo de Jairo, siempre dispuesto a escuchar, proponer y mejorar cada detalle del proyecto."
+        </blockquote>
+        <p>
+          <strong>Lucía Fernández</strong>, Diseñadora UX/UI freelance.
+          <br />
+          Colaboramos en varios proyectos de diseño y desarrollo web para clientes internacionales.
+        </p>
+      </article>
+    </section>
+
+    <section id="sugerencias">
+      <h2>Sugerencias para mejorar el currículum</h2>
+      <form action="#" method="post" aria-label="Formulario para sugerencias">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+        </div>
+
+        <div>
+          <label for="area-mejora">Área de mejora:</label>
+          <select id="area-mejora" name="area-mejora" required>
+            <option value="" disabled selected>Seleccione un área</option>
+            <option value="contenido">Contenido</option>
+            <option value="diseño">Diseño</option>
+            <option value="estructura">Estructura</option>
+            <option value="usabilidad">Usabilidad</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>¿Qué tipo de sugerencia quieres dar?</legend>
+          <div>
+            <input type="radio" id="tipo1" name="tipo-sugerencia" value="general" required />
+            <label for="tipo1">General</label>
+          </div>
+          <div>
+            <input type="radio" id="tipo2" name="tipo-sugerencia" value="tecnica" />
+            <label for="tipo2">Técnica</label>
+          </div>
+          <div>
+            <input type="radio" id="tipo3" name="tipo-sugerencia" value="visual" />
+            <label for="tipo3">Visual</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="habilidades">Habilidades que debería reforzar (selección múltiple):</label>
+          <select id="habilidades" name="habilidades[]" multiple size="4">
+            <option value="javascript">JavaScript</option>
+            <option value="css">CSS</option>
+            <option value="html">HTML</option>
+            <option value="react">React</option>
+            <option value="node">Node.js</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="comentarios">Comentarios adicionales:</label>
+          <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus sugerencias aquí..."></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Enviar sugerencia</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Jairo Rodriguez Ortiz - 2023</p>
     <ul>
-        <li><a
-        href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-        <li><a href="https://github.com/tunombre">GitHub</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/jairo-ortiz" target="_blank" rel="noopener">
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/tunombre" target="_blank" rel="noopener">GitHub</a>
+      </li>
     </ul>
-    
-</footer>
+  </footer>
 </body>
 </html>
