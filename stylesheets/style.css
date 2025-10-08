@@ -1,4 +1,40 @@
 /* Estilos básicos para la tabla sin bordes */
+body {
+  font-family: 'Red Rose', sans-serif;
+}
+
+/* Imagen con ID photo */
+#photo {
+  width: 8vw;
+  height: auto;
+}
+
+/* Títulos h2 con clase subtitle */
+.subtitle {
+  color: rgb(151 156 165 / 0.89);
+  text-transform: uppercase;
+}
+
+/* <p> dentro de <footer> */
+footer p {
+  text-align: right;
+  font-style: italic;
+}
+
+/* <ul> hija inmediata de <nav> */
+nav > ul {
+  list-style: none;
+  padding-left: 0; /* opcional, para eliminar indentación */
+}
+
+ /* Estilo para todas las etiquetas <section> */
+section {
+  border: 0.2pt solid #cedddd;
+  margin: 4px 2px 8px 2px; /* top, right/left, bottom */
+  padding: 1.5% 0.8%; /* vertical, horizontal */
+  margin-bottom: 1.2rem; /* override del bottom margin */
+}
+ 
 table {
   border-collapse: collapse;
   width: 100%;
@@ -49,4 +85,9 @@ fieldset {
 fieldset legend {
   font-weight: bold;
   padding: 0 0.5em;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif ;
+    text-align: center;
 }

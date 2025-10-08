@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mi Currículum Vitae</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="stylesheets/style.css" />
 </head>
 <body>
@@ -27,22 +32,22 @@
 
   <main>
     <section id="resumen">
-        <h2>Resumen</h2>
+        <h2 class="subtitle">Resumen</h2>
         <p>Breve descripción de tus habilidades y experiencia.</p>
     </section>
 
     <section id="experiencia">
-      <h2>Experiencia</h2>
+      <h2 class="subtitle" >Experiencia</h2>
       <!-- Aquí puedes añadir detalles de experiencia -->
     </section>
 
     <section id="educacion">
-      <h2>Educación</h2>
+      <h2class="subtitle" >Educación</h2>
       <!-- Aquí puedes añadir detalles de educación -->
     </section>
 
     <section id="habilidades">
-      <h2>Habilidades</h2>
+      <h2 class="subtitle" >Habilidades</h2>
       <ol>
         <li>Aprender nuevos lenguajes y frameworks</li>
         <li>Mejorar habilidades en trabajo en equipo</li>
@@ -58,7 +63,7 @@
     </section>
 
     <section id="proyectos">
-      <h2>Proyectos</h2>
+      <h2 class="subtitle" >Proyectos</h2>
       <table>
         <thead>
           <tr>
@@ -88,7 +93,7 @@
     </section>
 
     <section id="multimedia">
-      <h2>Multimedia</h2>
+      <h2 class="subtitle">Multimedia</h2>
 
       <article class="multimedia-item">
         <h3>Mapa de Bogotá (Google Maps)</h3>
@@ -107,6 +112,7 @@
       <article class="multimedia-item">
         <h3>Imagen de Programador</h3>
         <img
+          id="foto"
           src="https://picsum.photos/600/400?random=101&grayscale"
           alt="Imagen de un programador"
           width="600"
@@ -121,7 +127,7 @@
     </section>
 
     <section id="testimonios">
-      <h2>Testimonios</h2>
+      <h2 class="subtitle">Testimonios</h2>
 
       <article>
         <blockquote>
@@ -158,7 +164,7 @@
     </section>
 
     <section id="sugerencias">
-      <h2>Sugerencias para mejorar el currículum</h2>
+      <h2 class="subtitle">Sugerencias para mejorar el currículum</h2>
       <form action="#" method="post" aria-label="Formulario para sugerencias">
         <div>
           <label for="nombre">Nombre:</label>
