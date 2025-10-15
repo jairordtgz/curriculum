@@ -27,7 +27,7 @@ body {
 .cv-header {
   background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
   color: white;
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -690,4 +690,10 @@ main {
 /* Efecto de voltear */
 .flip-checkbox:checked + .card-inner {
   transform: rotateY(180deg);
+}
+
+.center-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
